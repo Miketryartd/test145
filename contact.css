@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Mooli&family=Pacifico&family=Pixelify+Sans&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,500;1,600&family=Quicksand:wght@700&family=Roboto+Condensed:wght@600&family=Roboto:ital,wght@0,100;0,300;0,700;1,300;1,400;1,500;1,700;1,900&family=Rubik:wght@800&family=Ubuntu:ital,wght@0,500;1,400&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-decoration: none;
+    
+}
+body{
+    background-color: rgb(31, 29, 29);
+}
+
+form{
+  
+    
+}
+form input{
+    transition: 0.4s ease;
+}
+form input:hover{
+    transition: 0.4s ease;
+    background-color: rgb(170, 170, 170);
+}
+form #name{
+    position: relative;
+    top: 180px;
+    width: 40%;
+    left: 575px;
+    height: 50px;
+    border-radius: 7px;
+    border: none;
+}
+form #email{
+    position: relative;
+    top: 280px;
+    width: 40%;
+    left: -194px;
+    height: 50px;
+    border-radius: 7px;
+    border: none;
+}
+form #subject{
+    position: absolute;
+    top:395px;
+    width: 40%;
+    left: 580px;
+    height: 50px;
+    border-radius: 7px;
+    border: none;
+}
+textarea{
+    position: absolute;
+    top:500px;
+    width: 40%;
+    left: 580px;
+    height:370px;
+    border-radius: 7px;
+    border: none;
+}
+#btn{
+    position: absolute;
+    top: 900px;
+    left: 580px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    width: 7%;
+    border-radius: 7px;
+    transition:  0.2s ease;
+}
+#btn:hover{
+    transition: 0.2s ease;
+    background-color: rgb(83, 82, 82);
+    color: white;
+}
+
+
+@media screen and (max-width: 437px) {
+    body {
+     max-height: 500px;
+    }
+    form{
+display: flex;
+justify-content: center;
+align-items: center;
+    }
+     form #name{
+        top:50px;
+        width: 100%;
+        left:110px;
+        
+    }
+    form #email{
+        top: 150px;
+        width: 100%;
+        left: -110px;
+    }
+    form #subject{
+        top: 250px;
+        width: 50%;
+        left: 110px;
+    }
+    form textarea{
+        top: 350px;
+        width: 100%;
+        left: 0px;
+    }
+    #btn{
+        top:  750px;
+        left: 110px;
+        width: 50%;
+    }
+  }
+  
+
+  @media screen and (max-width:360px) {
+    form #name{
+        left: 100px;
+    }
+    form #email{
+        left: -80px;
+    }
+    form #subject{
+        left: 100px;
+    }
+    form #btn{
+        left: 100px;
+    }
+    
+  }
+  /* Media query for screens with a minimum width of 1200 pixels */
+  @media screen and (min-width: 1200px) {
+    body {
+      
+    }
+  }

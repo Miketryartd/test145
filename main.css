@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Mooli&family=Pacifico&family=Pixelify+Sans&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,500;1,600&family=Quicksand:wght@700&family=Roboto+Condensed:wght@600&family=Roboto:ital,wght@0,100;0,300;0,700;1,300;1,400;1,500;1,700;1,900&family=Rubik:wght@800&family=Ubuntu:ital,wght@0,500;1,400&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-decoration: none;
+}
+body{
+background: linear-gradient(rgb(20, 20, 20), black);
+height: 100vh;
+}
+/* navigations*/
+.navflex{
+    position: fixed;
+    width: 100%;
+    background-color: rgb(26, 25, 25);
+}
+.navflex ul li{
+    position: relative;
+    left: 1150px;
+    display: inline-block;
+    padding: 2px 30px;
+}
+.navflex ul li a{
+    font-size: 2rem;
+    color: white;
+    transition: ease;
+}
+.navflex ul li a:hover{
+    transition: ease;
+    text-decoration: underline;
+}
+.navflex ul li h1{
+    position: relative;
+    color: rgb(121, 115, 115);
+    left:-1150px;
+    
+}
+.navleft{
+    width: 15%;
+ background-color: rgb(29, 28, 28);
+    height:953px;
+}
+.navleft h1{
+    position: relative;
+    top: 42px;
+    box-shadow: 0px 2px rgb(46, 46, 46);
+  background-color: rgb(32, 30, 30);
+    font-size: 5rem;
+    color: white;
+}
+.navleft #ig{
+    position: absolute;
+    top: 150px;
+    color: white;
+    font-size: 5rem;
+    transition: 0.4s ease;
+}
+.navleft #ig:hover{
+    transition: 0.2s ease;
+    color: red;
+}
+.navleft #fb{
+    position: absolute;
+    top: 150px;
+    color: white;
+    font-size: 5rem;
+    left: 100px;
+    transition: 0.4s ease;
+}
+.navleft #fb:hover{
+    transition: 0.2s ease;
+    color: red;
+}
+.navleft #tos{
+    position: absolute;
+    top: 430px;
+    color: rgb(98, 98, 98);
+    transition: ease;
+    
+}
+.navleft #tos:hover{
+    transition: ease;
+    text-decoration: underline;
+}
+.navleft #tat{
+    position: absolute;
+    top: 470px;
+   
+    color: rgb(82, 82, 82);
+}
+.navleft #h1{
+    position:absolute;
+    toP: 300px;
+    width: 15%;
+}
+.navleft ul li p{
+    position: absolute;
+    top: 500px;
+   
+    color: rgb(65, 61, 61);
+}
+/* navigations close*./
+
+/*gallery*/
+
+.gallery{
+    position: absolute;
+    top: 100px;
+    left: 500px;
+    width: 65%;
+    height: 850px;
+    background-color: rgb(40, 37, 37);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, auto));
+}
+.gallery .imgbox{
+    margin-top: 10px;
+    background-color: rgb(61, 56, 56);
+    width: 97%;
+    border-radius: 7px;
+  
+ 
+    
+  
+}
+.gallery .imgbox .desc{
+    text-align: center;
+    color: rgb(31, 29, 29);
+}
+.gallery .imgbox img{
+    width: 100%;
+    object-fit: contain;
+    background-color: rgb(30, 29, 29);
+    box-sizing: border-box;
+    box-shadow: 0px 2px 2px black;
+    height: 350px;
+}
+/*gallery*/
+
+/*links*/
+
+#sg{
+    position: absolute;
+    width: 5%;
+    background-color: rgb(45, 54, 45);
+    height:20px;
+    border-radius: 7px;
+    color: white;
+    top: 500px;
+    left: 1760px;
+    z-index: 100;
+    text-align: center;
+    z-index: 200;
+}
+.arrow{
+    position: absolute;
+    width: 2%;
+    background-color: rgb(90, 116, 90);
+    height:20px;
+    border-top-right-radius:50%;
+    border-bottom-right-radius: 50%;
+    color: white;
+    top: 500px;
+    left: 1835px;
+    z-index: 100;
+    cursor: pointer;
+}
+#smp{
+    position:absolute;
+    top:-400px;
+    left: 950px;
+    z-index: 200;
+}
+#mm{
+    display:none;
+}
+.sticky{
+    position: fixed;
+}
+.nlm{
+    display: none;
+}
+/*links-close*/
+
+
+/* Media query for screens with a maximum width of 600 pixels */
+@media screen and (max-width: 437px) {
+  body {
+  
+ height: 1000px;
+ max-height: 1000px;
+ width: 100%;
+ max-width: 100%;
+  }
+  .gallery{
+   position: relative;
+   left: -20px;
+   width: 105%;
+   top: 150px;
+  }
+  .gallery .imgbox{
+    width: 91.1%;
+  }
+  .gallery .imgbox img{
+    height: 270px;
+  }
+  .navflex{
+    width: 100%;
+   position: fixed;
+   z-index: 20000;
+    
+  }
+  .navflex ul li a{
+    font-size: 1rem;
+    position: relative;
+    left:-1250px;
+    display: none;
+  }
+  .navflex ul li h1{
+    font-size: 3rem;
+    position: relative;
+    left: -1070px;
+  }
+  .navleft{
+    display: none;
+  }
+  #smp{
+    display: none;
+  }
+  #sg{
+    left: 1px;
+    width: 20%;
+    background-color: red;
+    display: none;
+  }
+  .arrow{
+    display:none;
+  }
+  #mm{
+    display: block;
+    border: none;
+    position: absolute;
+    left: -850px;
+    font-size: 2rem;
+    z-index: 10000;
+    top:-60px;
+    background-color: rgb(39, 39, 33);
+    cursor: pointer;
+    color: white;
+
+  }
+  .nlm{
+    display: block;
+    width: 20%;
+    visibility:  hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: fixed;
+    top: 80px;
+    z-index: 10000;
+    width: 100%;
+    height: 700px;
+    background: linear-gradient( rgba(0, 0, 0, 0.854), rgba(0, 0, 0, 0.115));
+  }
+  .nlm ul li{
+    list-style: none;
+ 
+  }
+  .nlm ul li p{
+    color: rgb(176, 175, 175);
+  }
+  .nlm ul li a{
+    color: white;
+    text-decoration: underline;
+  
+width: 100%;
+font-size: 2rem;
+  
+  }
+  
+}
+@media screen and (max-width: 365px){
+    body{
+
+    }
+    .navflex ul li h1{
+        left: -1140px
+    }
+    #mm{
+       left:-970px;
+    }
+    .gallery{
+        margin-left: 22px;
+        height: 1300px;
+
+    }
+    .gallery .imgbox img{
+       
+    }
+    .gallery .imgbox{
+        
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    background-color: lightgreen;
+    font-size: 18px;
+  }
+}
